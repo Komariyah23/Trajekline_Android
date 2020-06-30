@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.trajekline">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".config.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".transaksi.Buat_Paket"></activity>
+        <activity android:name=".wisata.Pesan" />
+        <activity android:name=".dashboard.Fragment_Bantuan" />
+        <activity android:name=".dashboard.Fragment_Profil" />
+        <activity android:name=".dashboard.Fragment_Dashboard" />
+        <activity android:name=".transaksi.Konfirmasi_Pembayaran" />
+        <activity android:name=".transaksi.Transaksi" />
+        <activity android:name=".akun.Edit_Profile" />
+        <activity android:name=".dashboard.Dashboard" />
+        <activity android:name=".wisata.Detail_Wisata" />
+        <activity android:name=".wisata.Wisata" />
+        <activity android:name=".kategori.Kategori" />
+        <activity android:name=".akun.Sign_In" />
+        <activity android:name=".akun.Sign_Up" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
